@@ -54,7 +54,7 @@ export default function DesignSpace() {
   };
 
   return (
-    <div className='dropdown'>
+    <div className='sidebar'>
       <FormControl sx={{ m: 1, width: 200, mt: 3, border:"1px solid #E2E2EA", borderRadius:"15px", background:"#FAFAFB" }}>
         <Select
           multiple
@@ -64,7 +64,7 @@ export default function DesignSpace() {
           input={<OutlinedInput />}
           renderValue={(selected) => {
             if (selected.length === 0) {
-              return <em> <LanguageIcon sx={{width:"25.667px", height:"25.667px", color:"#92929D"}}/>Designspace</em>
+              return <em> <LanguageIcon sx={{width:"25.667px", color:"#92929D"}}/>Designspace</em>
               ;
             }
 

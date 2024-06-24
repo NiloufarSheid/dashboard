@@ -15,12 +15,12 @@ const Myplans = () => {
   };
 
   return (
-    <>
-    <Typography sx={{textAlign:"left" , color:"#171725", fontSize:"24px",fontWeight:"600", marginTop:"20px",marginLeft:"15px"}}>
+    <Grid sx={{width:"auto"}}>
+    <Typography p={2} sx={{ textAlign:"left" , color:"#171725", fontSize:"24px",fontWeight:"600", marginBottom:"20px"}}>
     My Plans
   </Typography>
 
-    <Grid container spacing={2} sx={{display:"flex", width:"100%",padding:"15px",textAlign:"center", borderRadius:"20px", border:"1px solid #F1F1F5", marginTop:"20px", marginLeft:"15px",alignContent:"end"}}>
+    <Grid container spacing={2} p={2} sx={{width:"auto", borderRadius:"20px", border:"1px solid #F1F1F5",alignItems:"center",justifyContent:"center"}}>
       <Grid  display={"flex"} xs={12} md={6}>
 
     <Grid item xs={6} md={3}  >
@@ -63,7 +63,7 @@ const Myplans = () => {
     </Grid>
     </Grid> 
     </Grid>
-    </>
+    </Grid>
  
   );
 }
